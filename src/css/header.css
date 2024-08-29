@@ -1,0 +1,281 @@
+
+Header {
+    align-items: revert;
+    width: 100%;
+}
+
+
+/* ==================================================================== */
+Header .size-lolo {
+    width: auto;
+    height: 48px;
+    background-color: black;
+}
+/* СУТОЧНО.РУ */
+Header .logo {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 52px;
+    position: relative;
+    top: 12px;
+}
+Header .icon0 {
+    content: "";
+    background: url('../img/0.png') no-repeat;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 15px;
+    left: 20px;
+}
+/* КЭШБЭК 30% */
+Header .cashback {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 15px;
+    position: relative;
+    top: 11px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+Header .size-lolo a {
+
+    text-decoration: none;
+}
+
+
+/* ==================================================================== */
+Header ul.nav {
+    float: right;
+    list-style: none;
+    margin: 8px;
+
+    font-size: 16px;
+
+}
+Header ul.nav a {
+    color: aqua;
+    text-decoration: none;
+
+}
+
+/* размер и цвет шрифта списка и отступы каждому елементу списка */
+.menu_item {
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    color: aqua;
+    position: relative;
+}
+
+.menu_nav{
+    color: aqua;
+    /*background-color: red;*/
+}
+.menu_item:nth-child(n + 2) {
+    margin-left: 50px;
+}
+
+/*иконки меню*/
+.icon {
+    margin-right: 6px;
+    position: absolute;
+    margin-left: -26px;
+    margin-top: 7px;
+
+}
+
+.icon::before {
+    background-blend-mode: multiply;
+
+}
+
+.menu_item:hover {
+    opacity: 0.5;
+    /*margin-right: 5px;*/
+    cursor: pointer;
+}
+
+
+
+
+/* ==================================================================== */
+
+.menu-button {
+
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 50%
+}
+
+.icon5{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+
+}
+
+.menu-button :hover {
+    opacity: 0.5;
+    /*margin-right: 5px;*/
+    cursor: pointer;
+}
+
+/*!* выпадающее меню *!*/
+
+/* --------------------  3  -------------------- */
+/*расположение абсолютно добавленна рамка и скругленны углы */
+.drop-down_menu3 {
+    position: absolute;
+    top: calc(7% + 40px);
+    right: 0px;
+    width: 200px;
+    padding: 15px;
+    background-color: #355757;
+    border: 2px solid red;
+    border-radius: 7px ;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: 0.3s;
+}
+.drop-down_menu3.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*добавление стрелки которая указывает на кнопку в header*/
+.drop-down_menu3::before, .drop-down_menu3::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 35px;
+    border: 10px solid transparent;
+}
+.drop-down_menu3::before{
+    top: -20px;
+    border-bottom: 10px solid #08ff00;
+}
+.drop-down_menu3::after{
+    top: -19px;
+    border-bottom: 10px solid #355757;
+}
+
+/* --------------------  4  -------------------- */
+/*расположение абсолютно добавленна рамка и скругленны углы */
+.drop-down_menu4 {
+    position: absolute;
+    top: calc(7% + 40px);
+    right: 0px;
+    width: 200px;
+    padding: 15px;
+    background-color: #355757;
+    border: 2px solid red;
+    border-radius: 7px ;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: 0.3s;
+}
+.drop-down_menu4.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*добавление стрелки которая указывает на кнопку в header*/
+.drop-down_menu4::before, .drop-down_menu4::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 15px;
+    border: 10px solid transparent;
+}
+.drop-down_menu4::before{
+    top: -20px;
+    border-bottom: 10px solid #08ff00;
+}
+.drop-down_menu4::after{
+    top: -19px;
+    border-bottom: 10px solid #355757;
+}
+
+/* --------------------  5  -------------------- */
+/*расположение абсолютно добавленна рамка и скругленны углы*/
+.drop-down_menu5 {
+    position: absolute;
+    top: calc(7% + 0px);
+    right: 0px;
+    width: 200px;
+    padding: 15px;
+    background-color: #355757;
+    border: 2px solid red;
+    border-radius: 7px ;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: 0.3s;
+}
+.drop-down_menu5.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*добавление стрелки которая указывает на кнопку в header*/
+.drop-down_menu5::before, .drop-down_menu5::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 16px;
+    border: 10px solid transparent;
+}
+.drop-down_menu5::before{
+    top: -20px;
+    border-bottom: 10px solid #08ff00;
+}
+.drop-down_menu5::after{
+    top: -19px;
+    border-bottom: 10px solid #355757;
+}
+
+/* Убираем отступы и точки у списка */
+.menu_list{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* размер и цвет шрифта списка и отступы каждому елементу списка */
+.menu_item2 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.menu_item2:nth-child(n + 2){
+    margin-top: 10px;
+}
