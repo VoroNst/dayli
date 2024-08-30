@@ -3,7 +3,6 @@ import logo6 from "../img/search.svg";
 // -------------------------------------
 
 import axios from "axios";
-import Country from "./Country";
 import CountryList from "./CountryList";
 
 const API_URL = 'http://127.0.0.1:8000/api/data/'
